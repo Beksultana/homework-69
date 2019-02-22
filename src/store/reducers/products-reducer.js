@@ -4,14 +4,17 @@ const initialState = {
     products: {}
 };
 
-const reducer = (state = initialState, action) => {
-        if (action.type === PRODUCTS_SUCCESS){
-            return {
-                ...state,
-                products: action.products
+const getProductsReducer = (state = initialState, action) => {
+        switch (action.type){
+            case PRODUCTS_SUCCESS: {
+               return {
+                   ...state,
+                   products: action.products
+               }
             }
+            default:
+                return state;
         }
-    return state;
 };
 
-export default reducer;
+export default getProductsReducer;

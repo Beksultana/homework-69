@@ -1,16 +1,16 @@
 .ProductsBlock {
-    width: 70%;
-    padding: 30px;
+    width: 60%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     border-right: 1px solid #ccc;
+    overflow: auto;
 }
 .ProductsItem {
     width: 25%;
     border: 1px solid #ccc;
     padding: 15px 10px;
-    margin: 10px;
+    margin: 8px;
     border-radius: 10px;
     box-shadow: 2px 2px 7px 1px #ccc;
 }
@@ -26,7 +26,7 @@
     box-shadow: 1px 2px 5px 1px #ccc;
 }
 .ButtonBlock {
-    background: url("../../accetss/216477-64.png") 12% 30% no-repeat;
+    background: url("../../accetss/216477-64.png") 6% 30% no-repeat;
 }
 .ProductsItem button:active {
     background: #009364;
@@ -40,4 +40,7 @@
 }
 .productsTextBlock h2, p{
     margin: 0;
+}
+.GetProductName{
+    text-transform: capitalize;
 }

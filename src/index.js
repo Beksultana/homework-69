@@ -6,10 +6,12 @@ import * as serviceWorker from './serviceWorker';
 import {createStore, applyMiddleware, combineReducers, compose} from 'redux'
 import thunkMiddleware from 'redux-thunk';
 import {Provider} from 'react-redux';
-import reducer from './store/reducers/products-reducer';
+import getProductsReducer from './store/reducers/products-reducer';
+import cardProductsReducer from './store/reducers/cardProductsReducer';
 
 const rootReducer = combineReducers({
-    getProductsReducer: reducer,
+    getProductsReducer: getProductsReducer,
+    cardProductsReducer: cardProductsReducer,
 });
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
