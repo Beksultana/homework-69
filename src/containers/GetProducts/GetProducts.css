@@ -1,0 +1,43 @@
+.ProductsBlock {
+    width: 70%;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-right: 1px solid #ccc;
+}
+.ProductsItem {
+    width: 25%;
+    border: 1px solid #ccc;
+    padding: 15px 10px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 7px 1px #ccc;
+}
+.ProductsItem button {
+    outline: none;
+    margin: 5px 0 0 50px;
+    padding: 8px 28px;
+    border-radius: 5px;
+    font-size: 16px;
+    border: transparent;
+    background: #00bf83;
+    color: #fff;
+    box-shadow: 1px 2px 5px 1px #ccc;
+}
+.ButtonBlock {
+    background: url("../../accetss/216477-64.png") 12% 30% no-repeat;
+}
+.ProductsItem button:active {
+    background: #009364;
+}
+.img {
+    width: 100%;
+    height: 75%;
+}
+.productsTextBlock{
+    text-align: center;
+}
+.productsTextBlock h2, p{
+    margin: 0;
+}

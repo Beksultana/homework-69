@@ -1,13 +1,16 @@
+import {PRODUCTS_SUCCESS} from "../actions/action-type";
+
 const initialState = {
-    ingredients: {
-        name: '',
-        cost: '',
-        image: '',
-    }
+    products: {}
 };
 
 const reducer = (state = initialState, action) => {
-
+        if (action.type === PRODUCTS_SUCCESS){
+            return {
+                ...state,
+                products: action.products
+            }
+        }
     return state;
 };
 
